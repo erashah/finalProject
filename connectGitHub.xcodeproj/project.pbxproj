@@ -17,6 +17,7 @@
 		BDAF6DAE289816D9001431FE /* connectGitHubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAF6DAD289816D9001431FE /* connectGitHubTests.swift */; };
 		BDAF6DB8289816D9001431FE /* connectGitHubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAF6DB7289816D9001431FE /* connectGitHubUITests.swift */; };
 		BDAF6DBA289816D9001431FE /* connectGitHubUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAF6DB9289816D9001431FE /* connectGitHubUITestsLaunchTests.swift */; };
+		BDEB2F8E28986D1C0071B861 /* GeneralStressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEB2F8D28986D1C0071B861 /* GeneralStressViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		BDAF6DB3289816D9001431FE /* connectGitHubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = connectGitHubUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDAF6DB7289816D9001431FE /* connectGitHubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = connectGitHubUITests.swift; sourceTree = "<group>"; };
 		BDAF6DB9289816D9001431FE /* connectGitHubUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = connectGitHubUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BDEB2F8D28986D1C0071B861 /* GeneralStressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralStressViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		BDAF6D87289816D7001431FE = {
 			isa = PBXGroup;
 			children = (
+				BDEB2F8D28986D1C0071B861 /* GeneralStressViewController.swift */,
 				BDAF6D92289816D7001431FE /* connectGitHub */,
 				BDAF6DAC289816D9001431FE /* connectGitHubTests */,
 				BDAF6DB6289816D9001431FE /* connectGitHubUITests */,
@@ -264,6 +267,7 @@
 				BDAF6D98289816D7001431FE /* ViewController.swift in Sources */,
 				BDAF6D94289816D7001431FE /* AppDelegate.swift in Sources */,
 				BDAF6D96289816D7001431FE /* SceneDelegate.swift in Sources */,
+				BDEB2F8E28986D1C0071B861 /* GeneralStressViewController.swift in Sources */,
 				BDAF6D9E289816D7001431FE /* connectGitHub.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
