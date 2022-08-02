@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BDA6AC2228999BC500D6933F /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA6AC2128999BC500D6933F /* Message.swift */; };
 		BDAF6D94289816D7001431FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAF6D93289816D7001431FE /* AppDelegate.swift */; };
 		BDAF6D96289816D7001431FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAF6D95289816D7001431FE /* SceneDelegate.swift */; };
 		BDAF6D98289816D7001431FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAF6D97289816D7001431FE /* ViewController.swift */; };
@@ -17,7 +18,11 @@
 		BDAF6DAE289816D9001431FE /* connectGitHubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAF6DAD289816D9001431FE /* connectGitHubTests.swift */; };
 		BDAF6DB8289816D9001431FE /* connectGitHubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAF6DB7289816D9001431FE /* connectGitHubUITests.swift */; };
 		BDAF6DBA289816D9001431FE /* connectGitHubUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAF6DB9289816D9001431FE /* connectGitHubUITestsLaunchTests.swift */; };
-		BDEB2F8E28986D1C0071B861 /* GeneralStressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEB2F8D28986D1C0071B861 /* GeneralStressViewController.swift */; };
+		BDC44C0E28997B8200E140D7 /* GeneralChatBotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC44C0D28997B8200E140D7 /* GeneralChatBotViewController.swift */; };
+		BDC44C1228998F2700E140D7 /* HomePageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC44C1128998F2700E140D7 /* HomePageTableViewController.swift */; };
+		BDC44C1428998FA000E140D7 /* Situation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC44C1328998FA000E140D7 /* Situation.swift */; };
+		BDE5A2722899B59D00A6F1E2 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE5A2712899B59D00A6F1E2 /* ContactTableViewCell.swift */; };
+		BDE5A2742899BD9800A6F1E2 /* MessagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE5A2732899BD9800A6F1E2 /* MessagesTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BDA6AC2128999BC500D6933F /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		BDAF6D90289816D7001431FE /* connectGitHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = connectGitHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDAF6D93289816D7001431FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDAF6D95289816D7001431FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,7 +58,11 @@
 		BDAF6DB3289816D9001431FE /* connectGitHubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = connectGitHubUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDAF6DB7289816D9001431FE /* connectGitHubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = connectGitHubUITests.swift; sourceTree = "<group>"; };
 		BDAF6DB9289816D9001431FE /* connectGitHubUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = connectGitHubUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		BDEB2F8D28986D1C0071B861 /* GeneralStressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralStressViewController.swift; sourceTree = "<group>"; };
+		BDC44C0D28997B8200E140D7 /* GeneralChatBotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralChatBotViewController.swift; sourceTree = "<group>"; };
+		BDC44C1128998F2700E140D7 /* HomePageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageTableViewController.swift; sourceTree = "<group>"; };
+		BDC44C1328998FA000E140D7 /* Situation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Situation.swift; sourceTree = "<group>"; };
+		BDE5A2712899B59D00A6F1E2 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		BDE5A2732899BD9800A6F1E2 /* MessagesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +93,6 @@
 		BDAF6D87289816D7001431FE = {
 			isa = PBXGroup;
 			children = (
-				BDEB2F8D28986D1C0071B861 /* GeneralStressViewController.swift */,
 				BDAF6D92289816D7001431FE /* connectGitHub */,
 				BDAF6DAC289816D9001431FE /* connectGitHubTests */,
 				BDAF6DB6289816D9001431FE /* connectGitHubUITests */,
@@ -106,12 +115,18 @@
 			children = (
 				BDAF6D93289816D7001431FE /* AppDelegate.swift */,
 				BDAF6D95289816D7001431FE /* SceneDelegate.swift */,
-				BDAF6D97289816D7001431FE /* ViewController.swift */,
 				BDAF6D99289816D7001431FE /* Main.storyboard */,
 				BDAF6D9F289816D9001431FE /* Assets.xcassets */,
 				BDAF6DA1289816D9001431FE /* LaunchScreen.storyboard */,
 				BDAF6DA4289816D9001431FE /* Info.plist */,
 				BDAF6D9C289816D7001431FE /* connectGitHub.xcdatamodeld */,
+				BDAF6D97289816D7001431FE /* ViewController.swift */,
+				BDC44C0D28997B8200E140D7 /* GeneralChatBotViewController.swift */,
+				BDC44C1128998F2700E140D7 /* HomePageTableViewController.swift */,
+				BDC44C1328998FA000E140D7 /* Situation.swift */,
+				BDA6AC2128999BC500D6933F /* Message.swift */,
+				BDE5A2712899B59D00A6F1E2 /* ContactTableViewCell.swift */,
+				BDE5A2732899BD9800A6F1E2 /* MessagesTableViewCell.swift */,
 			);
 			path = connectGitHub;
 			sourceTree = "<group>";
@@ -264,11 +279,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDC44C0E28997B8200E140D7 /* GeneralChatBotViewController.swift in Sources */,
 				BDAF6D98289816D7001431FE /* ViewController.swift in Sources */,
 				BDAF6D94289816D7001431FE /* AppDelegate.swift in Sources */,
+				BDC44C1428998FA000E140D7 /* Situation.swift in Sources */,
 				BDAF6D96289816D7001431FE /* SceneDelegate.swift in Sources */,
-				BDEB2F8E28986D1C0071B861 /* GeneralStressViewController.swift in Sources */,
+				BDA6AC2228999BC500D6933F /* Message.swift in Sources */,
+				BDE5A2722899B59D00A6F1E2 /* ContactTableViewCell.swift in Sources */,
+				BDE5A2742899BD9800A6F1E2 /* MessagesTableViewCell.swift in Sources */,
 				BDAF6D9E289816D7001431FE /* connectGitHub.xcdatamodeld in Sources */,
+				BDC44C1228998F2700E140D7 /* HomePageTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
