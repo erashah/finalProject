@@ -23,6 +23,8 @@
 		BDC44C1428998FA000E140D7 /* Situation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC44C1328998FA000E140D7 /* Situation.swift */; };
 		BDE5A2722899B59D00A6F1E2 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE5A2712899B59D00A6F1E2 /* ContactTableViewCell.swift */; };
 		BDE5A2742899BD9800A6F1E2 /* MessagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE5A2732899BD9800A6F1E2 /* MessagesTableViewCell.swift */; };
+		BDE5A276289ABC8A00A6F1E2 /* GreyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE5A275289ABC8A00A6F1E2 /* GreyTableViewCell.swift */; };
+		BDE5A278289AC56A00A6F1E2 /* BlueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE5A277289AC56A00A6F1E2 /* BlueTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		BDC44C1328998FA000E140D7 /* Situation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Situation.swift; sourceTree = "<group>"; };
 		BDE5A2712899B59D00A6F1E2 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 		BDE5A2732899BD9800A6F1E2 /* MessagesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesTableViewCell.swift; sourceTree = "<group>"; };
+		BDE5A275289ABC8A00A6F1E2 /* GreyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreyTableViewCell.swift; sourceTree = "<group>"; };
+		BDE5A277289AC56A00A6F1E2 /* BlueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,8 @@
 				BDA6AC2128999BC500D6933F /* Message.swift */,
 				BDE5A2712899B59D00A6F1E2 /* ContactTableViewCell.swift */,
 				BDE5A2732899BD9800A6F1E2 /* MessagesTableViewCell.swift */,
+				BDE5A275289ABC8A00A6F1E2 /* GreyTableViewCell.swift */,
+				BDE5A277289AC56A00A6F1E2 /* BlueTableViewCell.swift */,
 			);
 			path = connectGitHub;
 			sourceTree = "<group>";
@@ -280,10 +286,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDC44C0E28997B8200E140D7 /* GeneralChatBotViewController.swift in Sources */,
+				BDE5A278289AC56A00A6F1E2 /* BlueTableViewCell.swift in Sources */,
 				BDAF6D98289816D7001431FE /* ViewController.swift in Sources */,
 				BDAF6D94289816D7001431FE /* AppDelegate.swift in Sources */,
 				BDC44C1428998FA000E140D7 /* Situation.swift in Sources */,
 				BDAF6D96289816D7001431FE /* SceneDelegate.swift in Sources */,
+				BDE5A276289ABC8A00A6F1E2 /* GreyTableViewCell.swift in Sources */,
 				BDA6AC2228999BC500D6933F /* Message.swift in Sources */,
 				BDE5A2722899B59D00A6F1E2 /* ContactTableViewCell.swift in Sources */,
 				BDE5A2742899BD9800A6F1E2 /* MessagesTableViewCell.swift in Sources */,
@@ -467,6 +475,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = connectGitHub/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TheraFish;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -494,6 +503,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = connectGitHub/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TheraFish;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
