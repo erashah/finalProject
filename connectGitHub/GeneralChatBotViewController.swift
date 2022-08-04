@@ -55,7 +55,7 @@ class GeneralChatBotViewController: UIViewController, UITableViewDelegate, UITab
             [Message(ifBot: true, text: "why is this making you anxious?")],
             
             [Message(ifBot: true, text: "let's do a breathing exercise! ready?")],
-            [Message(ifBot: true, text: "put one hand on your stomach and the other on your chest.")],
+            [Message(ifBot: true, text: "put 1 hand on your stomach and another on your chest.")],
             [Message(ifBot: true, text:"inhale through your nose for 4 seconds:", delayed: 4)],
             [Message(ifBot: true, text:"hold your breath for 7 seconds:", delayed: 7)],
             [Message(ifBot: true, text:"exhale through your mouth for 8 seconds:", delayed: 8)],
@@ -83,17 +83,17 @@ class GeneralChatBotViewController: UIViewController, UITableViewDelegate, UITab
         ],
         
         "nervous anticipation": [
-            [Message(ifBot: true, text:"everything will turn out okay. \n let's start a relaxtion technique!")],
+            [Message(ifBot: true, text:"everything will be ok. let's practice a relaxtion method!")],
             [Message(ifBot: true, text:"text back 3 sounds you hear.")],
             [Message(ifBot: true, text:"text back and move 3 parts of your body.")],
             [Message(ifBot: true, text:"text back 3 things you see.")],
             [Message(ifBot: true, text:"let's repeat some positive affirmations.")],
-            [Message(ifBot: true, text:"text back these affirmations while repeating them to yourself.")],
+            [Message(ifBot: true, text:"repeat these affirmations to yourself.")],
             [Message(ifBot: true, text:"everything is happening for my ultimate good.")],
             [Message(ifBot: true, text:"as i breathe, i am calm and relaxed.")],
             [Message(ifBot: true, text:"i can move past this moment.")],
             [Message(ifBot: true, text:"i can handle anything that comes my way.")],
-            [Message(ifBot: true, text:"i have the strength and confidence needed to succeed.")],
+            [Message(ifBot: true, text:"i have the confidence needed to succeed.")],
             ],
         
         "panic zone": [
@@ -209,6 +209,8 @@ class GeneralChatBotViewController: UIViewController, UITableViewDelegate, UITab
             if(message.ifBot) {
                 // create a new cell if needed or reuse an old one
                 let cell = (tableView.dequeueReusableCell(withIdentifier: "recieveTextIdentifier") as! GreyTableViewCell?)!
+                //removing grey lines between cells
+                cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: .greatestFiniteMagnitude)
                 cell.messageText.text = message.text
 //                cell.textLabel?.numberOfLines = 0
                 
@@ -216,6 +218,9 @@ class GeneralChatBotViewController: UIViewController, UITableViewDelegate, UITab
 //                cell.backgroundView = UIImageView(image: UIImage(named: "greyBubbleLeft.png")!)
             }
             let cell = (tableView.dequeueReusableCell(withIdentifier: "sendTextIdentifier") as! BlueTableViewCell?)!
+            //removing grey lines between cells
+            cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: .greatestFiniteMagnitude)
+
 //            cell.textLabel?.numberOfLines = 0
             cell.messageText.text = message.text
 //                cell.backgroundView = UIImageView(image: UIImage(named: "blueMessage.png")!)
