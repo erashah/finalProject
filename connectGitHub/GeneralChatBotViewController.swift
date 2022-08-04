@@ -127,14 +127,13 @@ class GeneralChatBotViewController: UIViewController, UITableViewDelegate, UITab
     }
     
     func addCountdown(second: Int) {
-        var countdown = Message(ifBot: true, text: "\(second)...")
+        let countdown = Message(ifBot: true, text: "\(second)...")
         messages.append(countdown)
         tableView.reloadData()
         scrollToBottom()
         if(second != 1) {
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
                 self.addCountdown(second: second - 1)
-                print("done")
             })
         }
     }
@@ -147,9 +146,7 @@ class GeneralChatBotViewController: UIViewController, UITableViewDelegate, UITab
                 scrollToBottom()
                 if(msg.delayed > 0) {
                     DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
-                        self.addCountdown(second: msg.delayed)
-                        print("done")
-                    })
+                        self.addCountdown(second: msg.delayed)                    })
                 }
                 
             }
