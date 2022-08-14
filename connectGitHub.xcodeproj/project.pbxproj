@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9EFDCA8128A7078D00EF4180 /* ResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFDCA8028A7078D00EF4180 /* ResourcesViewController.swift */; };
 		BDA6AC2228999BC500D6933F /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA6AC2128999BC500D6933F /* Message.swift */; };
 		BDAF6D94289816D7001431FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAF6D93289816D7001431FE /* AppDelegate.swift */; };
 		BDAF6D96289816D7001431FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAF6D95289816D7001431FE /* SceneDelegate.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9EFDCA8028A7078D00EF4180 /* ResourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesViewController.swift; sourceTree = "<group>"; };
 		BDA6AC2128999BC500D6933F /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		BDAF6D90289816D7001431FE /* connectGitHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = connectGitHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDAF6D93289816D7001431FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				BDE5A2732899BD9800A6F1E2 /* MessagesTableViewCell.swift */,
 				BDE5A275289ABC8A00A6F1E2 /* GreyTableViewCell.swift */,
 				BDE5A277289AC56A00A6F1E2 /* BlueTableViewCell.swift */,
+				9EFDCA8028A7078D00EF4180 /* ResourcesViewController.swift */,
 			);
 			path = connectGitHub;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				BDE5A278289AC56A00A6F1E2 /* BlueTableViewCell.swift in Sources */,
 				BDAF6D98289816D7001431FE /* ViewController.swift in Sources */,
 				BDAF6D94289816D7001431FE /* AppDelegate.swift in Sources */,
+				9EFDCA8128A7078D00EF4180 /* ResourcesViewController.swift in Sources */,
 				BDC44C1428998FA000E140D7 /* Situation.swift in Sources */,
 				BDAF6D96289816D7001431FE /* SceneDelegate.swift in Sources */,
 				BDE5A276289ABC8A00A6F1E2 /* GreyTableViewCell.swift in Sources */,

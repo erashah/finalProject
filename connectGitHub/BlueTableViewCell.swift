@@ -10,9 +10,11 @@ import UIKit
 class BlueTableViewCell: UITableViewCell {
 
     @IBOutlet var messageText: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -20,5 +22,7 @@ class BlueTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+
+  
 
 }

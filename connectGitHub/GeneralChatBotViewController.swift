@@ -10,11 +10,14 @@ import UIKit
 class GeneralChatBotViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
+   
+   
+ 
     @IBOutlet var situationName: UILabel!
     
     var situation = Situation(name: "", description: "", imgName: "")
     var stage = 0
-    
+      
     //outlets
     
     
@@ -28,6 +31,7 @@ class GeneralChatBotViewController: UIViewController, UITableViewDelegate, UITab
         
         tableView.delegate = self
         tableView.dataSource = self
+     
         
         stage = 0
 
@@ -59,27 +63,35 @@ class GeneralChatBotViewController: UIViewController, UITableViewDelegate, UITab
             [Message(ifBot: true, text:"inhale through your nose for 4 seconds:", delayed: 4)],
             [Message(ifBot: true, text:"hold your breath for 7 seconds:", delayed: 7)],
             [Message(ifBot: true, text:"exhale through your mouth for 8 seconds:", delayed: 8)],
-            
+            [Message(ifBot: true, text: "let's practice it again.")],
+            [Message(ifBot: true, text:"inhale through your nose for 4 seconds:", delayed: 4)],
+            [Message(ifBot: true, text:"hold your breath for 7 seconds:", delayed: 7)],
+            [Message(ifBot: true, text:"exhale through your mouth for 8 seconds:", delayed: 8)],
+            [Message(ifBot: true, text: "let's try one last time.")],
+            [Message(ifBot: true, text:"inhale through your nose for 4 seconds:", delayed: 4)],
+            [Message(ifBot: true, text:"hold your breath for 7 seconds:", delayed: 7)],
+            [Message(ifBot: true, text:"exhale through your mouth for 8 seconds:", delayed: 8)],
         ],
         
         "unsafe situation": [
-            [Message(ifBot: true, text:"assess your surroundings. do you want to create a plan of action?")],
+            [Message(ifBot: true, text:"look around, do you want to create a plan of action?")],
             [Message(ifBot: true, text:"text back where the exits are.")],
-            [Message(ifBot: true, text:"share your location with a trusted individual. text back when completed.")],
-            [Message(ifBot: true, text:"always remember, stay calm, cautios, and alert.")],
-            [Message(ifBot: true, text:"if necessary, create a scene to attract attention of others in the area or call law enforcement.")],
+            [Message(ifBot: true, text:"share your location with a trusted individual.")],
+            [Message(ifBot: true, text:"always remember, stay calm, cautious, and alert.")],
+            [Message(ifBot: true, text:"if necessary, call law enforcement.")],
            
         ],
         
         "new environment": [
-            [Message(ifBot: true, text:"remember that the people you are meeting are just ordinary people, just like you. they're probably nervous too!")],
+            [Message(ifBot: true, text:"the people you're meeting are ordinary people!")],
+            [Message(ifBot: true, text:"they are probably nervous too!")],
             [Message(ifBot: true, text:"let's start a mock conversation to practice your social skills.")],
             [Message(ifBot: true, text:"hi, i'm TheraFish. what's your name?")],
-            [Message(ifBot: true, text:"'say a compliment.'")],
+            [Message(ifBot: true, text:"(say a compliment)")],
             [Message(ifBot: true, text:"thank you! where are you from?")],
             [Message(ifBot: true, text:"do you have any siblings or pets? i have 50 fish siblings!")],
             [Message(ifBot: true, text:"i love swimming with my siblings. do you play any sports?")],
-            [Message(ifBot: true, text:"'complain about something relatable that you have in common, like the weather or how you're feeling.'")]
+            [Message(ifBot: true, text:"(complain about something relatable that you have in common)")]
         ],
         
         "nervous anticipation": [
@@ -100,12 +112,21 @@ class GeneralChatBotViewController: UIViewController, UITableViewDelegate, UITab
             [Message(ifBot: true, text:"take some deep breaths, in and out."),
             ],
             [Message(ifBot: true, text:"now, we'll begin some progressive muscle relaxation.")],
-            [Message(ifBot: true, text:"let's start with arms and hands.")],
+            [Message(ifBot: true, text:"curl your hands into fists, squeeze your fists and tense your arms", delayed: 5)],
+            [Message(ifBot: true, text:"relax your muscles slowly", delayed: 10)],
+            [Message(ifBot: true, text:"tense your legs and feet", delayed: 5)],
+            [Message(ifBot: true, text:"relax your muscles slowly", delayed: 10)],
+            [Message(ifBot: true, text:"tense your shoulders", delayed: 5)],
+            [Message(ifBot: true, text:"let shoulders slowly drop", delayed: 10)]
         ],
+        
+        "resources": [
+            [Message(ifBot: true, text:"here are some resources"),
+            ]
+        ]
     
     ]
             
-        
         
         
         
@@ -158,7 +179,7 @@ class GeneralChatBotViewController: UIViewController, UITableViewDelegate, UITab
     }
     
     func addNavBarImage() {
-            let navController = navigationController!
+        let navController = navigationController!
         let image = UIImage(named: situation.imgName) //Your logo url here
             let imageView = UIImageView(image: image)
             let bannerWidth = navController.navigationBar.frame.size.width

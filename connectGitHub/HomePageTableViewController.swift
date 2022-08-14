@@ -9,6 +9,8 @@ import UIKit
 
 class HomePageTableViewController: UITableViewController {
     
+   
+    
     var situations = [Situation]()
     
     func createSituations() -> [Situation] {
@@ -18,9 +20,11 @@ class HomePageTableViewController: UITableViewController {
         let newEnviro = Situation(name: "new environment", description: "how to aquaint yourself in an unfamiliar space", imgName: "newEnvironmentFish.png")
         let nervousAnticipation = Situation(name: "nervous anticipation", description: "affirmations to help build your confidence and calm your nerves", imgName: "bigEventFish.png")
         let panicZone = Situation(name: "panic zone", description: "methods to alleviate stress in extreme conditions", imgName: "panicFish.png")
+        //new addition (resources page)
+        let resources = Situation(name: "resources", description: "additional resources to help you combat ur anxiety", imgName: "resourceFish.png")
         
 
-      return [stress, unsafe, newEnviro, nervousAnticipation, panicZone]
+      return [stress, unsafe, newEnviro, nervousAnticipation, panicZone, resources]
     }
 
     override func viewDidLoad() {
@@ -35,6 +39,7 @@ class HomePageTableViewController: UITableViewController {
         situations = createSituations()
     }
 
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -82,11 +87,14 @@ class HomePageTableViewController: UITableViewController {
     // goToChatBot
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
+        
+        let situation = situations[indexPath.row]
+        //redirecting resources page
+        if situation.name == "resources" {
+            performSegue(withIdentifier: "resourcesPage", sender: situation)
+        }
       // this gives us a single ToDo
-    let situation = situations[indexPath.row]
-
-      performSegue(withIdentifier: "goToChatBot", sender: situation)
+        performSegue(withIdentifier: "goToChatBot", sender: situation)
     }
     
 
