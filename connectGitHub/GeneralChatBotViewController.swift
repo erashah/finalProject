@@ -130,7 +130,7 @@ class GeneralChatBotViewController: UIViewController, UITableViewDelegate, UITab
         
         
         
-        
+    //testing push
     
     func scrollToBottom() {
         if messages.count != 0 {
