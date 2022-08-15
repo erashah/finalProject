@@ -25,6 +25,40 @@ class ResourcesViewController: UIViewController {
     }
     
     
+    @IBAction func buttonHopkinsLink(_ sender: UIButton) {
+        if let url = URL(string: "https://www.hopkinsmedicine.org/health/treatment-tests-and-therapies/how-to-help-someone-with-anxiety"){
+            UIApplication.shared.open(url)
+        }
+    }
+    
+    
+    @IBAction func buttonMayoLink(_ sender: UIButton) {
+        if let url = URL(string: "https://www.mayoclinichealthsystem.org/hometown-health/speaking-of-health/11-tips-for-coping-with-an-anxiety-disorder"){
+            UIApplication.shared.open(url)
+        }
+    }
+    
+    
+    @IBAction func buttonClevelandLink(_ sender: UIButton) {
+        if let url = URL(string: "https://my.clevelandclinic.org/health/diseases/9536-anxiety-disorders"){
+            UIApplication.shared.open(url)
+        }
+    }
+    
+    
+    @IBAction func buttonYaleLink(_ sender: UIButton) {
+        if let url = URL(string: "https://medicine.yale.edu/news-article/safety-signals-may-help-slow-down-anxiety/"){
+            UIApplication.shared.open(url)
+        }
+    }
+    
+    
+    @IBAction func buttonADAALink(_ sender: UIButton) {
+        if let url = URL(string: "https://adaa.org/tips"){
+            UIApplication.shared.open(url)
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

@@ -93,8 +93,9 @@ class HomePageTableViewController: UITableViewController {
         if situation.name == "resources" {
             performSegue(withIdentifier: "resourcesPage", sender: situation)
         }
-      // this gives us a single ToDo
-        performSegue(withIdentifier: "goToChatBot", sender: situation)
+        else {
+            performSegue(withIdentifier: "goToChatBot", sender: situation)
+        }
     }
     
 
