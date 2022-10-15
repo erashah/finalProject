@@ -11,12 +11,18 @@ class ResourcesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
-
     }
     
     //actions
+    
+    //done button
+    
+    @IBAction func buttonDoneClose(_ sender: UIButton) {
+        if((self.presentingViewController) != nil){
+            self.dismiss(animated: false, completion: nil)
+          }
+    }
     
     @IBAction func buttonFirstLink(_ sender: UIButton) {
         if let url = URL(string: "https://www.health.harvard.edu/blog/anxiety-what-it-is-what-to-do-2018060113955"){
