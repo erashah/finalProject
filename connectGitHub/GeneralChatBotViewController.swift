@@ -85,13 +85,14 @@ class GeneralChatBotViewController: UIViewController, UITableViewDelegate, UITab
         "new environment": [
             [Message(ifBot: true, text:"the people you're meeting are ordinary people!")],
             [Message(ifBot: true, text:"they are probably nervous too!")],
-            [Message(ifBot: true, text:"let's start a mock conversation to practice your social skills.")],
+            [Message(ifBot: true, text:"let's chat to practice your social skills.")],
             [Message(ifBot: true, text:"hi, i'm TheraFish. what's your name?")],
             [Message(ifBot: true, text:"(say a compliment)")],
             [Message(ifBot: true, text:"thank you! where are you from?")],
             [Message(ifBot: true, text:"do you have any siblings or pets? i have 50 fish siblings!")],
-            [Message(ifBot: true, text:"i love swimming with my siblings. do you play any sports?")],
-            [Message(ifBot: true, text:"(complain about something relatable that you have in common)")]
+            [Message(ifBot: true, text:"i just love swimming! do you play any sports?")],
+            [Message(ifBot: true, text:"(complain about something relatable)")],
+            [Message(ifBot: true, text:"nice job! now try these tactics with other people.")]
         ],
         
         "nervous anticipation": [
@@ -111,8 +112,8 @@ class GeneralChatBotViewController: UIViewController, UITableViewDelegate, UITab
         "panic zone": [
             [Message(ifBot: true, text:"take some deep breaths, in and out."),
             ],
-            [Message(ifBot: true, text:"now, we'll begin some progressive muscle relaxation.")],
-            [Message(ifBot: true, text:"curl your hands into fists, squeeze your fists and tense your arms", delayed: 5)],
+            [Message(ifBot: true, text:"let's begin some progressive muscle relaxation.")],
+            [Message(ifBot: true, text:"squeeze your hands into fists and tense your arms", delayed: 5)],
             [Message(ifBot: true, text:"relax your muscles slowly", delayed: 10)],
             [Message(ifBot: true, text:"tense your legs and feet", delayed: 5)],
             [Message(ifBot: true, text:"relax your muscles slowly", delayed: 10)],
